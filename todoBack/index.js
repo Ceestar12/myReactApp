@@ -42,6 +42,9 @@ app.post('/items', async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
+app.get("/home",(req,res)=>{
+  res.send('Welcome to the home page')
+})
 
 // Find items by name or description
 app.get('/items/search', async (req, res) => {
