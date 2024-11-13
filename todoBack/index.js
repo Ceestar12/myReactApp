@@ -42,7 +42,7 @@ app.post('/items', async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
-app.get("/home",(req,res)=>{
+app.get("/items/home",(req,res)=>{
   res.send('Welcome to the home page')
 })
 
